@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_sobre.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\sobre.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_difficulty_level.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\difficulty_level.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\menu_options_menu.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\menu\\options_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_xo.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\xo.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_new_game.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\new_game.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_quit_game.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\quit_game.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable_icon.png.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\build\\intermediates\\merged_res\\debug\\layout_about_dialog.xml.flat",
+        "source": "C:\\Users\\bioinf\\Documents\\dcto\\u\\4\\DAM\\retos\\TicTacToe+1\\app\\src\\main\\res\\layout\\about_dialog.xml"
+    }
+]
