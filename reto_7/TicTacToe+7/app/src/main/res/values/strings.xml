@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi-Tic-Tac-Toe</string>
+    <string name="first_human">Comienzas</string>
+    <string name="turn_human">Su turno</string>
+    <string name="turn_computer">Turno de Maquina</string>
+    <string name="result_tie">!! Empate !!</string>
+    <string name="result_human_wins">Ganas, humano</string>
+    <string name="result_android_wins">Android Gana</string>
+    <string name="difficulty_choose">Elige la dificultad</string>
+    <string name="difficulty_easy">Facil</string>
+    <string name="difficulty_harder">Complicado</string>
+    <string name="difficulty_expert">Nivel Dios</string>
+    <string name="quit_question">Quiere irse </string>
+    <string name="yes">Si</string>
+    <string name="no">Estar, mas rato</string>
+    <string name="description">Sobre la App</string>
+    <string name="app_info">Aplicación para el aprendisaje en la materia Diseño de Aplicaciones para dispositivos Moviles</string>
+
+</resources>
