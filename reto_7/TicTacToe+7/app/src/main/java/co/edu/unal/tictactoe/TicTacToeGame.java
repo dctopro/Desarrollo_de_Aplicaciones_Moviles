@@ -6,8 +6,8 @@ import java.util.Random;
 
 public class TicTacToeGame {
     // Characters used to represent the human, computer, and open spots
-    public static final char HUMAN_PLAYER = 'X';
-    public static final char COMPUTER_PLAYER = 'O';
+    public static char HUMAN_PLAYER = 'X';
+    public static char COMPUTER_PLAYER = 'O';
     public static final char OPEN_SPOT = ' ';
     public static final int BOARD_SIZE =9 ;
     char[] mBoard=new char[9];

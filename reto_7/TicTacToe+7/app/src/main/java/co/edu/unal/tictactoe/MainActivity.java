@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     // Represents the internal state of the game
     private TicTacToeGame mGame;
     private boolean mGameOver = false;
-    private boolean isChallengingPlayer = false;
+    private Integer isChallengingPlayer = 0;
 
     private int mHumanWins = 0;
     private int mComputerWins = 0;
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences mPrefs;
 
     Button buttonNewGame;
+    Button buttonRestart;
     MediaPlayer mHumanMediaPlayer;
     MediaPlayer mComputerMediaPlayer;
 
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             int row = (int) event.getY() / mBoardView.getBoardCellHeight();
             int pos = row * 3 + col;
 
-            if (!mGameOver && mTurn) {
+            if (!mGameOver && mTurn && isChallengingPlayer !=2) {
                 if (setMove(TicTacToeGame.HUMAN_PLAYER, pos)) {
                     buttonNewGame.setEnabled(false);
                     mGoFirst = mGoFirst == TicTacToeGame.HUMAN_PLAYER ? TicTacToeGame.COMPUTER_PLAYER : TicTacToeGame.HUMAN_PLAYER;
@@ -88,9 +89,11 @@ public class MainActivity extends AppCompatActivity {
                     mTurn = false;
 
                     if (winner == 0) {
-                        //mInfoTextView.setText(R.string.turn_computer);
-                        //turnComputer();
-                        mInfoTextView.setText("Turno del oponente");
+                        if (isChallengingPlayer!=2){
+                            mInfoTextView.setText("Turno del oponente");
+                            mInfoTextView.setText(R.string.turn_computer);
+                            //turnComputer();
+                        }
                     } else {
                         endGame(winner);
                         gamesRef.child(keyGame).child("state").setValue("finalized");
@@ -139,27 +142,36 @@ public class MainActivity extends AppCompatActivity {
         uuidPlayer = getIntent().getStringExtra("uuidPlayer");
         keyGame = getIntent().getStringExtra("keyGame");
         String StateChallengingPlayer = getIntent().getStringExtra("isChallengingPlayer");
+        String defendingPlayer = getIntent().getStringExtra("defendingPlayer");
+        String challengerPlayer = getIntent().getStringExtra("challengerPlayer");
 
-        if(StateChallengingPlayer.equals("true")) {
-            isChallengingPlayer = true;
+        if(StateChallengingPlayer.equals("0")) {
+            isChallengingPlayer = 0;
+            mGame.HUMAN_PLAYER = 'X';
+            mGame.COMPUTER_PLAYER = 'O';
+        }
+        else if(StateChallengingPlayer.equals("1")) {
+            isChallengingPlayer = 1;
             mInfoTextView.setText("Turno del oponente");
             gamesRef.child(keyGame).child("uuidChallengingPlayer").setValue(uuidPlayer);
             gamesRef.child(keyGame).child("state").setValue("inprogress");
-            //mGame.HUMAN_PLAYER = 'O';
-            //mGame.COMPUTER_PLAYER = 'X';
+            mGame.HUMAN_PLAYER = 'O';
+            mGame.COMPUTER_PLAYER = 'X';
             mTurn = false;
+        }
+        else{
+            isChallengingPlayer = 2;
+            mInfoTextView.setText("Modo espectador \n"+defendingPlayer+"X !! Contra ¡¡ "+challengerPlayer+" O");
         }
 
         gamesRef.child(keyGame).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                if(!mTurn) {
+                if(!mTurn || isChallengingPlayer==2) {
                     Game game = dataSnapshot.getValue(Game.class);
-
                     if(game.board.equals(new String(mGame.getBoardState()))) {
                        return;
                     }
-
                     mGame.setBoardState(game.board.toCharArray());
                     System.out.println(game.board);
 
@@ -170,14 +182,11 @@ public class MainActivity extends AppCompatActivity {
                         } catch (Exception e) {
                         }
                     }
-                    int winner = mGame.checkForWinner();
-                    if (winner == 0) {
-                        mInfoTextView.setText(R.string.turn_human);
-                    } else {
-                        endGame(winner);
-
+                    if (isChallengingPlayer!=2){
+                        int winner = mGame.checkForWinner();
+                        if (winner == 0) {mInfoTextView.setText(R.string.turn_human);}
+                        else {endGame(winner);}
                     }
-
                     mTurn = true;
                 }
             }
@@ -211,6 +220,15 @@ public class MainActivity extends AppCompatActivity {
         buttonNewGame.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startNewGame();
+            }
+        });
+        buttonRestart = findViewById(R.id.reset);
+        buttonRestart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mHumanWins = 0;
+                mComputerWins = 0;
+                mTies = 0;
+                displayScores();
             }
         });
 
@@ -311,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
         mGameOver = false;
         // Human goes first
 
-        if(!isChallengingPlayer) {
+        if(isChallengingPlayer==0) {
             mInfoTextView.setText(R.string.first_human);
         }
     }

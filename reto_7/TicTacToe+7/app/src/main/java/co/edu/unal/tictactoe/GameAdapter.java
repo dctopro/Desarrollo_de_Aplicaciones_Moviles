@@ -53,13 +53,21 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
                     Intent intent = new Intent(v.getContext(), MainActivity.class);
                     intent.putExtra("uuidPlayer", uuidPlayer);
                     intent.putExtra("keyGame", keys.get(getLayoutPosition()));
+                    String challengerPlayer = games.get(getLayoutPosition()).uuidChallengingPlayer;
+                    String defendingPlayer = games.get(getLayoutPosition()).uuidDefendingPlayer;
 
                     if(uuidPlayer.equals(games.get(getLayoutPosition()).uuidDefendingPlayer)) {
-                        intent.putExtra("isChallengingPlayer", "false");
+                        intent.putExtra("isChallengingPlayer", "0");
                     }
 
-                    else {
-                        intent.putExtra("isChallengingPlayer", "true");
+                    else if (challengerPlayer==null || uuidPlayer.equals(challengerPlayer)){
+                        intent.putExtra("isChallengingPlayer", "1");
+                    }
+                    else{
+                        intent.putExtra("isChallengingPlayer", "2");
+                        intent.putExtra("defendingPlayer", defendingPlayer);
+                        intent.putExtra("challengerPlayer", challengerPlayer);
+
                     }
 
                     v.getContext().startActivity(intent);

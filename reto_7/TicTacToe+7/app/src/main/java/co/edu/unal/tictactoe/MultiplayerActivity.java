@@ -48,12 +48,13 @@ public class MultiplayerActivity extends AppCompatActivity {
                 gamesRef.child(keyGame).setValue(game);
                 intent.putExtra("uuidPlayer", uuidPlayer);
                 intent.putExtra("keyGame", keyGame);
-                intent.putExtra("isChallengingPlayer", "false");
+                intent.putExtra("isChallengingPlayer", "0");
                 myContext.startActivity(intent);
             }
         });
 
-        gamesRef.orderByChild("state").equalTo("new").addValueEventListener(new ValueEventListener() {
+        //gamesRef.orderByChild("state").equalTo("new").addValueEventListener(new ValueEventListener() {
+        gamesRef.orderByChild("state").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 gameList.clear();
@@ -61,9 +62,11 @@ public class MultiplayerActivity extends AppCompatActivity {
 
                 for (DataSnapshot gameSnapshot: snapshot.getChildren()) {
                     Game game = gameSnapshot.getValue(Game.class);
-                    gameList.add(game);
-                    keyGameList.add(gameSnapshot.getKey());
-                    System.out.println(game.uuidDefendingPlayer);
+
+                    if (!game.state.equals("finalized")){
+                        gameList.add(game);
+                        keyGameList.add(gameSnapshot.getKey());
+                        System.out.println(game.uuidDefendingPlayer);}
                 }
 
                 reyclerViewGame = (RecyclerView) findViewById(R.id.recyclerViewGame);
